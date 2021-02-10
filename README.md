@@ -30,6 +30,10 @@ nano /etc/nginx/sites-enabled/default
 * Download the Website release from Github / Extract the archive and place it under Nginx `/var/www/html`
 
 ```bash
+# Devenir root
+sudo su -
+
+# Installer la version du site
 curl -L  https://github.com/Lowess/restaurant-landingpage/archive/v1.0.0.tar.gz \
 	--output web.tar.gz; \
 	tar xzf web.tar.gz --strip 1 -C /var/www/html; \
