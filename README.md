@@ -27,6 +27,13 @@ apt-get install nginx
 nano /etc/nginx/sites-enabled/default
 ```
 
+* Restart the `nginx` webserver 
+
+```
+systemctl status nginx
+systemctl restart nginx
+```
+
 * Download the Website release from Github / Extract the archive and place it under Nginx `/var/www/html`
 
 ```bash
@@ -34,8 +41,9 @@ nano /etc/nginx/sites-enabled/default
 sudo su -
 
 # Installer la version du site
-curl -L  https://github.com/Lowess/restaurant-landingpage/archive/v1.0.0.tar.gz \
-	--output web.tar.gz; \
-	tar xzf web.tar.gz --strip 1 -C /var/www/html; \
-	rm -f web.tar.gz;
+curl -L  https://github.com/Lowess/restaurant-landingpage/archive/v1.0.0.tar.gz --output web.tar.gz
+
+tar xzf web.tar.gz --strip 1 -C /var/www/html
+
+rm -f web.tar.gz
 ```
