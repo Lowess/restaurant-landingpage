@@ -7,9 +7,9 @@
 |                 |                    |
 | --------------- | ------------------ |
 | Distributor ID: | Ubuntu             |
-| Description     | Ubuntu 20.04.1 LTS |
-| Release         | 20.04              |
-| Codename        | focal              |
+| Description     | Ubuntu 24.04.1 LTS |
+| Release         | 24.04              |
+| Codename        | noble              |
 
 ---
 
